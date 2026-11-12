@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEK · Cursos de Euskara</title>
+    <link rel="stylesheet" href="Css final.css">
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <header class="cabecera">
+        <div class="contenedor cabecera-contenido">
+            <img src="aekLogo.png" alt="Logo de AEK">
+            <div class="texto-cabecera">
+                <h1>AEK</h1>
+                <p class="lema">Formación accesible y de calidad para todas las personas.</p>
+                <div class="botones">
+                    <a class="boton principal" href="#cursos">Ver cursos</a>
+                    <a class="boton" href="#registro">Registrarse</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav class="navegador">
+        <div class="contenedor">
+            <ul class="menu-lista">
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#ayuda">Ayuda</a></li>
+                <li><a href="#registro">Registrarse</a></li>
+                <li><a href="#login">Iniciar sesión</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="contenedor">
+        
+        <!-- ===== SECCIÓN CURSOS (A1 - C2) ===== -->
+        <section class="bloque" id="cursos">
+            <h2>Catálogo completo de cursos</h2>
+            <p class="intro">Apúntate a nuestros niveles disponibles.</p>
+            
+            <div class="rejilla">
+                <article>
+                    <span class="etiqueta">Nivel A1</span>
+                    <h3>Euskara - Nivel A1</h3>
+                    <p>Iniciación básica en la lengua vasca para adquirir las primeras herramientas de comunicación.</p>
+                    <a class="boton" href="#login">Apuntarme</a>
+                </article>
+
+                <article>
+                    <span class="etiqueta">Nivel A2</span>
+                    <h3>Euskara - Nivel A2</h3>
+                    <p>Consolidación de estructuras básicas para desenvolverse en situaciones cotidianas sencillas.</p>
+                    <a class="boton" href="#login">Apuntarme</a>
+                </article>
+
+                <article>
+                    <span class="etiqueta">Nivel B1</span>
+                    <h3>Euskara - Nivel B1</h3>
+                    <p>Desarrollo de la autonomía para comprender y producir textos sobre temas conocidos.</p>
+                    <a class="boton" href="#login">Apuntarme</a>
+                </article>
+
+                <article>
+                    <span class="etiqueta">Nivel B2</span>
+                    <h3>Euskara - Nivel B2</h3>
+                    <p>Uso avanzado de la lengua con fluidez y naturalidad en entornos variados y profesionales.</p>
+                    <a class="boton" href="#login">Apuntarme</a>
+                </article>
+
+                <article>
+                    <span class="etiqueta">Nivel C1</span>
+                    <h3>Euskara - Nivel C1</h3>
+                    <p>Dominio operativo eficaz del idioma con capacidad para tratar temas complejos y técnicos.</p>
+                    <a class="boton" href="#login">Apuntarme</a>
+                </article>
+
+                <article>
+                    <span class="etiqueta">Nivel C2</span>
+                    <h3>Euskara - Nivel C2</h3>
+                    <p>Competencia lingüística óptima equivalente a hablantes altamente cualificados.</p>
+                    <a class="boton" href="#login">Apuntarme</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN AYUDA ===== -->
+        <section class="bloque" id="ayuda">
+            <h2>Preguntas frecuentes</h2>
+            <p class="intro">Resuelve tus dudas sobre el funcionamiento de los cursos.</p>
+            
+            <details>
+                <summary>¿Cómo me apunto a un curso?</summary>
+                <p>Primero crea tu cuenta, luego inicia sesión y pulsa "Apuntarme" en el nivel que elijas.</p>
+            </details>
+            <details>
+                <summary>¿Qué niveles de Euskara están disponibles?</summary>
+                <p>Ofrecemos formación completa desde el nivel inicial A1 hasta el nivel superior C2.</p>
+            </details>
+            <details>
+                <summary>¿Cómo puedo saber cuál es mi nivel?</summary>
+                <p>Puedes ponerte en contacto con nosotros por correo o teléfono para realizar una prueba de nivel gratuita.</p>
+            </details>
+        </section>
+
+        <!-- ===== SECCIÓN REGISTRO ===== -->
+        <section class="bloque" id="registro">
+            <div class="caja-formulario">
+                <h2>Crear cuenta</h2>
+                <p class="intro">Introduce tus datos para registrarte.</p>
+                
+                <form>
+                    <label>Nombre
+                        <input type="text" placeholder="Tu nombre">
+                    </label>
+                    <label>Correo electrónico
+                        <input type="email" placeholder="correo@ejemplo.com">
+                    </label>
+                    <label>Contraseña (mínimo 6 caracteres)
+                        <input type="password" placeholder="********">
+                    </label>
+                    <button class="boton principal" type="submit">Crear cuenta</button>
+                </form>
+                <p class="texto-pie-form">¿Ya tienes cuenta? <a href="#login">Inicia sesión</a></p>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN LOGIN (INICIAR SESIÓN) ===== -->
+        <section class="bloque" id="login">
+            <div class="caja-formulario">
+                <h2>Iniciar sesión</h2>
+                <p class="intro">Accede con tus datos de usuario.</p>
+                
+                <form>
+                    <label>Correo electrónico
+                        <input type="email" placeholder="correo@ejemplo.com">
+                    </label>
+                    <label>Contraseña
+                        <input type="password" placeholder="********">
+                    </label>
+                    <button class="boton principal" type="submit">Entrar</button>
+                </form>
+                <p class="texto-pie-form">¿No tienes cuenta? <a href="#registro">Regístrate</a></p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="contenedor">
+            <p>&copy; 2026 AEK - Todos los derechos reservados</p>
+            <p>Contacto: <a href="mailto:info@aek.eus">info@aek.eus</a> | Teléfono: 900 000 000</p>
+        </div>
+    </footer>
+
+</body>
+</html>
